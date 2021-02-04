@@ -20,6 +20,7 @@ const Login = () => {
     try {
       setError("");
       setloading(true);
+
       await login(emailRef.current.value, passwordRef.current.value);
       history.push("/");
     } catch (err) {
@@ -49,7 +50,7 @@ const Login = () => {
               Sign Up
             </Button>
             <div className="w-1000 text-center mt-2">
-              <Link to='/forgot-password'>Forgot Password?</Link>
+              <Link to="/forgot-password">Forgot Password?</Link>
             </div>
           </Form>
         </Card.Body>
