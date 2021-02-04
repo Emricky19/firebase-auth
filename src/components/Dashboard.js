@@ -24,7 +24,7 @@ const Dashboard = () => {
         {error && <Alert variant="danger">{error}</Alert>}
         <Card.Body>
           <strong>Email: </strong>
-          {currentUser && currentUser.email}
+          {currentUser.email}
           <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
             Update Profile
           </Link>
